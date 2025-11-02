@@ -4,7 +4,7 @@ from jinja2.filters import sync_do_sum
 app = Flask(__name__)
 @app.route('/')
 def home():
-    return render_template('index.html')
+    return render_template('main.html')
 @app.route('/ejercicio1')
 def ejercicio1():
      return render_template('ejercicio1.html')
