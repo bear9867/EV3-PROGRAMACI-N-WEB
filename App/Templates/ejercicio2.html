@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 2</title>
+     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='Style.css') }}">
+</head>
+<body>
+<div id="contenedor">
+    <form action="/Conteo" method="post">
+            <br>
+            <label class = "labelEj2">Nombre 1:</label>  <br>
+            <input type="text" name="nombre1" class="cuadro_texto_EJ2"><br>
+            <br>
+            <label class="labelEj2">Nombre 2:</label>  <br>
+            <input type="text" name="nombre2" class="cuadro_texto_EJ2"><br>
+            <br>
+            <label class= "labelEj2">Nombre 3:</label>  <br>
+            <input type="text" name="nombre3" class="cuadro_texto_EJ2"><br><br>
+
+            <button  class="btnEnviar" type="submit">Enviar</button>
+
+            {% if resultado is not none and resultado2 is not none %}
+                <h2 class="resultado">{{ resultado }}</h2>
+                <h2 class="resultado">{{ resultado2}}</h2>
+            {% endif %}
+        </form>
+</div>
+</body>
+</html>
