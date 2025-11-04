@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 1</title>
+     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='Style.css') }}">
+</head>
+<body >
+<div id="contenedor">
+  <h1>Formulario de notas</h1>
+        <form action="/Calculo" method="post">
+            <label class="labelEj1">Nota1:</label><br>
+            <input type="number" name="nota1" class="cuadro_texto_EJ1"><br>
+
+            <label class="labelEj1">Nota2:</label><br>
+            <input type="number" name="nota2" class="cuadro_texto_EJ1"><br>
+
+            <label class="labelEj1">Nota3:</label><br>
+            <input type="number" name="nota3" class="cuadro_texto_EJ1"><br>
+
+            <label class="labelEj1">Asistencia%:</label><br>
+            <input type="number" name="asistencia" class="cuadro_texto_EJ1"><br><br>
+
+            <button  class="btnEnviar" type="submit">Enviar</button>
+
+            {% if resultado is not none and resultado2 is not none %}
+                <h2 class="resultado">{{ resultado }}</h2>
+                <h2 class="resultado">{{ resultado2}}</h2>
+            {% endif %}
+
+        </form>
+
+</div>
+</body>
+</html>

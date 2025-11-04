@@ -1,0 +1,74 @@
+body{
+background-color: #A19C9A}
+#contenedor{
+    background-color: white;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid silver;
+    padding: 20px;
+}
+.btnEjercicio1{
+    color: white;
+    text-decoration: underline;
+    position: absolute;
+    top: 45%;
+    left: 40%;
+    background-color: #1954B5;
+    width: 150px;
+    height: 50px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+.btnEjercicio2{
+    color: white;
+    position: absolute;
+    text-decoration: underline;
+    top: 55%;
+    left: 40%;
+    background-color: #1954B5;
+    width: 150px;
+    height: 50px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+.btnEnviar{
+    color: white;
+    background-color: #1954B5;
+    width: 150px;
+    height: 30px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+h2{
+    font-size: 12px;
+    font-weight: normal;
+    font-family: 'Arial', sans-serif;
+    color: #303030;
+}
+.labelEj1{
+     font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    font-size:15px;
+}
+.labelEj2{
+     font-family: 'Arial', sans-serif;
+    font-weight: normal;
+    font-size:15px;
+}
+.cuadro_texto_EJ1{
+    font-family: 'Arial', sans-serif;
+    width:200px
+}
+.cuadro_texto_EJ2{
+    font-family: 'Arial', sans-serif;
+    width:350px
+}
+.div_Centrado{
+    text-align: center;
+}
