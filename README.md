@@ -15,6 +15,5 @@ Instalar dependencias
 pip install -r requirements.txt
 
 Ejecutar proyecto
-python Main.py
 
 
