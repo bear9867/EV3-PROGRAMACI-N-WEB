@@ -15,7 +15,6 @@ Instalar dependencias
 pip install -r requirements.txt
 
 Ejecutar proyecto
-python app.py
+python Main.py
 
-Abrir navegador
-http://127.0.0.1:5000
+
